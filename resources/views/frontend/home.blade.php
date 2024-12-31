@@ -9,7 +9,7 @@
     <x-slider />
 
     <!-- Product Category -->
-    <section class="py-10" id="services">
+    {{-- <section class="py-10" id="services">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
                 Product Category
@@ -37,10 +37,11 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> --}}
+    <x-list-category/>
 
     <!-- Product New -->
-    <section class="py-10" id="services">
+    {{-- <section class="py-10" id="services">
         <div class="bg-white py-16">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold text-black mb-8">Product New</h2>
@@ -123,7 +124,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
+    <x-product-new/>
 
     <!-- Product sale -->
     <section class="py-10" id="services">
@@ -212,7 +214,7 @@
     </section>
 
     <!-- Post New -->
-    <div class="container mx-auto my-8 px-2">
+    {{-- <div class="container mx-auto my-8 px-2">
         <ul class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 p-2 xl:p-5">
             <li
                 class="relative bg-white flex flex-col justify-between border rounded shadow-md hover:shadow-primary-400">
@@ -387,38 +389,8 @@
                 </div>
             </li>
         </ul>
-    </div>
-
-    <!-- about us -->
-    <section class="bg-gray-100" id="aboutus">
-        <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-                <div class="max-w-lg">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
-                        About Us
-                    </h2>
-                    <p class="mt-4 text-gray-600 text-lg">
-                        Bappa flour mill provides our customers with the highest quality
-                        products and services. We offer a wide variety of flours and
-                        spices to choose from, and we are always happy to help our
-                        customers find the perfect products for their needs. We are
-                        committed to providing our customers with the best possible
-                        experience. We offer competitive prices, fast shipping, and
-                        excellent customer service. We are also happy to answer any
-                        questions that our customers may have about our products or
-                        services. If you are looking for a flour and spices service
-                        business that can provide you with the highest quality products
-                        and services, then we are the company for you. We look forward to
-                        serving you!
-                    </p>
-                </div>
-                <div class="mt-12 md:mt-0">
-                    <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86" alt="About Us Image"
-                        class="object-cover rounded-lg shadow-md" />
-                </div>
-            </div>
-        </div>
-    </section>
+    </div> --}}
+    <x-post-new/>
 
     <!-- why us  -->
     <section class="text-gray-700 body-font mt-10">

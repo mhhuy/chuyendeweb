@@ -1,10 +1,10 @@
-<div class="hidden md:flex space-x-6">
-    <a href="{{url('/')}}" class="hover:text-blue-500 px-3 py-2">Home</a>
-    <a href="{{url('/san-pham')}}" class="hover:text-blue-500 px-3 py-2"
-      >Product</a
-    >
-    <a href="#aboutus" class="hover:text-blue-500 px-3 py-2">About Us</a>
-    <a href="{{url('/lien-he')}}" class="hover:text-blue-500 px-3 py-2"
-      >Contact</a
-    >
-  </div>
+<nav class="flex justify-between bg-purple-600 items-center">
+    <ul class="flex">
+        @foreach ($menus as $menuitem)
+            <x-sub-main-menu :menuitem="$menuitem" />
+        @endforeach
+    </ul>
+    <div class="md:hidden visible text-white">
+        <i class="fa-solid fa-bars-staggered"></i>
+    </div>
+</nav>

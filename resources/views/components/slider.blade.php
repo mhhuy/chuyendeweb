@@ -1,16 +1,13 @@
 <Slider class="bg-gray-100">
     <!-- Slider Container -->
     <div class="relative w-full max-w-full overflow-hidden rounded-lg shadow-lg h-80">
-        <!-- Slider Images -->
-        <div class="flex transition-transform duration-700 ease-in-out" id="slider">
-            <img src="https://d3design.vn/uploads/summer_sale_holiday_podium_display_on_yellow_background.jpg"
-                alt="Image 1" class="w-full flex-shrink-0 object-cover" />
-            <img src="https://d3design.vn/uploads/summer_242_01.jpg" alt="Image 2"
-                class="w-full flex-shrink-0 object-cover" />
-            <img src="https://via.placeholder.com/1600x900/32CD32/FFFFFF?text=Image+3" alt="Image 3"
-                class="w-full flex-shrink-0 object-cover" />
-        </div>
-
+        @foreach ($banners as $sliders)
+            <!-- Slider Images -->
+            <div class="flex transition-transform duration-700 ease-in-out" id="slider">
+                <img src="{{ asset('images/banner/' . $sliders['image']) }}" alt="{{ $sliders['image'] }}"
+                    class="w-full flex-shrink-0 object-cover" />
+            </div>
+        @endforeach
         <!-- Navigation Buttons -->
         <button id="prev"
             class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-700">
